@@ -1,5 +1,5 @@
 
-const BACKEND_URL = 'http://localhost:8000'; // Default to local backend
+const BACKEND_URL = 'https://youtube-video-clip-maker.onrender.com'; // Default to local backend
 const API_BASE = `${BACKEND_URL}/api`;
 
 document.addEventListener('DOMContentLoaded', () => {
