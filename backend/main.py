@@ -44,10 +44,20 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 async def read_index():
     return FileResponse(os.path.join(STATIC_DIR, "index.html"), media_type="text/html")
 
+@app.get("/analyze.html")
+async def read_analyze():
+    return FileResponse(os.path.join(STATIC_DIR, "analyze.html"), media_type="text/html")
+
+@app.get("/downloads.html")
+async def read_downloads():
+    return FileResponse(os.path.join(STATIC_DIR, "downloads.html"), media_type="text/html")
+
+@app.get("/gallery.html")
+async def read_gallery():
+    return FileResponse(os.path.join(STATIC_DIR, "gallery.html"), media_type="text/html")
 
 # Static file serving is removed for frontend files as they are now in /frontend
 # However, we still serve processed files if needed, but via specific endpoints.
-
 
 class ProcessRequest(BaseModel):
     urls: list[str]  # Support multiple URLs for batch processing
