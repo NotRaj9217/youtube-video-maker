@@ -39,6 +39,10 @@ os.makedirs(DOWNLOADS_DIR, exist_ok=True)
 
 # Mount static files
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+@app.get("/")
+async def read_index():
+    return FileResponse(os.path.join(STATIC_DIR, "index.html"), media_type="text/html")
+
 
 # Static file serving is removed for frontend files as they are now in /frontend
 # However, we still serve processed files if needed, but via specific endpoints.
