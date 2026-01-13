@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+yt-dlp
+moviepy
+imageio-ffmpeg
+SpeechRecognition
+textblob
+pydub
+openai
+Pillow
+opencv-python
+pytesseract
+numpy
+openai-whisper
+python-multipart

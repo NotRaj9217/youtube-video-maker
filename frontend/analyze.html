@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results - Viral Clip Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-glob"></div>
+
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand-link">
+                <div class="nav-brand">
+                    <img src="logo.png" alt="ViralClipGen Logo" class="nav-logo">
+                    <h2>ViralClip<span class="highlight">Gen</span></h2>
+                </div>
+            </a>
+            <div class="nav-tabs">
+                <a href="index.html" class="nav-tab">Home</a>
+                <a href="analyze.html" class="nav-tab">Analyze</a>
+                <a href="downloads.html" class="nav-tab">Downloads</a>
+                <a href="gallery.html" class="nav-tab">Gallery</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="results-page" class="section active">
+            <header>
+                <h1>Analysis <span class="highlight">Results</span></h1>
+                <p>Found viral segments ready for clipping.</p>
+            </header>
+
+            <div id="status-container" class="card hidden">
+                <div class="status-indicator">
+                    <div class="spinner"></div>
+                    <span id="status-text">Starting analysis...</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div id="results-container" class="card hidden">
+                <h3><span class="highlight">Viral Segments</span> Found</h3>
+                <div id="clips-list" class="timelines-list">
+                    <!-- Clips will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

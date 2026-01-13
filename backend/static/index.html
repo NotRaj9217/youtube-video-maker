@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viral Clip Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-glob"></div>
+
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand-link">
+                <div class="nav-brand">
+                    <img src="/static/logo.png" alt="ViralClipGen Logo" class="nav-logo">
+                    <h2>ViralClip<span class="highlight">Gen</span></h2>
+                </div>
+            </a>
+            <div class="nav-tabs">
+                <a href="/" class="nav-tab active">Home</a>
+                <a href="/analyze.html" class="nav-tab">Analyze</a>
+                <a href="/downloads.html" class="nav-tab">Downloads</a>
+                <a href="/gallery.html" class="nav-tab">Gallery</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- HOME SECTION -->
+        <div id="home-section" class="section active">
+            <header>
+                <h1>Turn YouTube Videos into <br><span class="highlight">Viral Shorts</span></h1>
+                <p>Paste a link, get AI-optimized clips in seconds.</p>
+            </header>
+
+            <div class="card">
+                <div class="form-container">
+                    <!-- Input and Controls Row -->
+                    <div class="input-controls-row">
+                        <div class="input-wrapper">
+                            <input type="text" id="video-url" placeholder="Paste YouTube link here..."
+                                autocomplete="off">
+                            <button id="clear-btn" class="clear-input-btn" title="Clear">❌</button>
+                        </div>
+
+                        <!-- Button Row - Analyze on left, Duration on right -->
+                        <div class="button-row">
+                            <div class="analyze-section">
+                                <button id="analyze-btn" class="analyze-button-primary">
+                                    <span id="btn-icon">🚀</span>
+                                    <span id="btn-text">Analyze Video</span>
+                                </button>
+                            </div>
+                            <div class="duration-wrapper">
+                                <label for="duration-select" class="control-label">Duration:</label>
+                                <select id="duration-select" class="duration-select">
+                                    <option value="30">30 seconds</option>
+                                    <option value="60">60 seconds</option>
+                                    <option value="120">120 seconds</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
