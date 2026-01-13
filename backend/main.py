@@ -59,6 +59,7 @@ async def read_gallery():
 # Static file serving is removed for frontend files as they are now in /frontend
 # However, we still serve processed files if needed, but via specific endpoints.
 
+
 class ProcessRequest(BaseModel):
     urls: list[str]  # Support multiple URLs for batch processing
     duration_mode: str = "30" # 30, 60, 120, custom
